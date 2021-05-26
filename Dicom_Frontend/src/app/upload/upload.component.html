@@ -1,0 +1,36 @@
+<div class="loader" style="display: none"></div>
+<div class="content">
+<div class="container">		
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <form (ngSubmit)="upload(uploaddata)" #uploaddata="ngForm" >
+
+                <div class="form-group ">
+                <label for="folderupload">Source Path</label>
+
+                <input type="text" name="filepath" class="form-control" [(ngModel)]="filepath">
+                
+                </div>
+                <div class="form-group ">
+                <label for="uploaddate">Date of Upload</label>
+                <input class="form-control" name="uploaddate" [(ngModel)]="uploaddate"/>
+                </div>
+                <div class="form-group">
+                <label for="sourcename">Source Name</label>
+
+                <input type="text" name="sourcename" class="form-control" [(ngModel)]="sourcename">
+
+                </div>
+                <div class="form-group">
+                    <label for="sourcename">Destination Path</label>
+                    <input type="text" name="destpath" class="form-control" [(ngModel)]="destpath">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+

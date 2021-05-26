@@ -1,0 +1,47 @@
+
+/*.box {
+  width: 50%;
+    background: #ca0164;
+
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+*/
+.foo {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.black {
+  background-color: #000000;
+}
+
+.yellow {
+  background-color : #ffff00;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+
+#searchresult{
+	display: none;
+}
+
+#sessionresult{
+	font-size: 14px;
+	max-height: 70vh;
+	overflow-y: auto;
+
+}
+.card-body{
+	text-align: left;
+}

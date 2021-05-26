@@ -1,0 +1,39 @@
+<div class="row ">
+    <div class="col-sm-3">
+        <form (ngSubmit)="search(searchparams)" #searchparams="ngForm">
+        <div class="form-group ">
+            <label for="startdate" >Start Date</label>
+            <input type="datetime-local" id="startdate" class="form-control" name="startdate" [(ngModel)]="startdate">
+        </div>
+        <div class="form-group ">
+        <label for="enddate" >End Date</label>
+        <input type="datetime-local" id="enddate" class="form-control" name="enddate" [(ngModel)]="enddate">
+        </div>
+        <div class="form-group">
+            <label for="sourcename" >Source Name</label>
+            <input type="text" id="sourcename" class="form-control" name="sourcename" [(ngModel)]="sourcename">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+    </div>
+    <div class="col-sm-9" id="searchresult">
+        <div class="row" style="justify-content: center;">
+            <div>
+                <div class="foo black"></div><span>Not Started</span>
+            </div>
+            <div>
+                <div class="foo yellow"></div><span>In Progress</span>
+            </div>
+            <div>
+                <div class="foo green"></div><span>Completed</span>
+            </div>
+
+        </div>
+        <div class="row" id="sessionresult">
+        </div>
+ 
+    </div>
+</div>
